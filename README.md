@@ -16,7 +16,7 @@ You can build and package the tool using the following commands. The instruction
 dotnet build
 ```
 
-Knowing That I made an app service to deploy the app to it (https://librarymsbackend.azurewebsites.net/) as you can see in the screenshot 
+Knowing That I made an app service to deploy the app to it (https://librarymsbackend.azurewebsites.net/swagger/index.html) as you can see in the screenshot , it won't works online because I used sqlite db
 
 ![alt text](https://github.com/RamiAlkhateeb/LibraryManagementSystem/blob/master/azure.png?raw=true)
 
