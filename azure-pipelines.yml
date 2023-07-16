@@ -44,10 +44,3 @@ steps:
     ArtifactName: 'AzureTestProject'
     publishLocation: 'Container'
 
-- task: AzureWebApp@1
-  name: 'PublishToAzure'
-  displayName: 'Publish Azure'
-  inputs:
-    azureSubscription: 'Azure subscription 1'
-    appType: 'webApp'
-    appName: 'LibraryMSBackend'
