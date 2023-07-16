@@ -39,7 +39,7 @@ namespace LibraryManagementSystem.Infrastructure.Data
         public async Task<List<Book>> ListAllAsync(string? searchFilter)
         {
             if (searchFilter != null)
-                return await _dbContext.Books.Where(b => b.IsDeleted == false && b.Title.Contains(searchFilter)).ToListAsync();
+                return await _dbContext.Books.Where(b => b.IsDeleted == false && b.Title.ToLower().Contains(searchFilter.ToLower())).ToListAsync();
             return await _dbContext.Books.Where(b => b.IsDeleted == false).ToListAsync();
 
         }
