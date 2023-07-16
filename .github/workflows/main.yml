@@ -5,6 +5,10 @@ on:
   push:
     branches:
     - master
+    
+env:
+  AZURE_WEBAPP_NAME: LibraryMSBackend
+  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
 
 jobs:
   Publish:
@@ -22,7 +26,14 @@ jobs:
         run: dotnet restore ./LibraryManagementSystem.sln
         
       - name: Build
-        run: dotnet build ./LibraryManagementSystem.sln 
+        run: dotnet build ./LibraryManagementSystem.sln --configuration Release
         
       - name: Publish
-        run: dotnet publish ./LibraryManagementSystem.sln --configuration Release
+        run: dotnet publish ./LibraryManagementSystem.sln --configuration Release --output ' ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+      
+      - name: deployment
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secerts.AZURE_PUBLISH_PROFILE }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
