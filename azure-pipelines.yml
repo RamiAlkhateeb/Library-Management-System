@@ -31,7 +31,7 @@ steps:
   displayName: 'Publish'
   inputs:
     command: 'publish'
-    publishWebProjects: false
+    publishWebProjects: true
     projects: '$(project)'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: false
@@ -43,3 +43,11 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'AzureTestProject'
     publishLocation: 'Container'
+
+- task: AzureWebApp@1
+  name: 'PublishToAzure'
+  displayName: 'Publish Azure'
+  inputs:
+    azureSubscription: 'Azure subscription 1'
+    appType: 'webApp'
+    appName: 'LibraryMSBackend'
