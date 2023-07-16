@@ -585,11 +585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\LibraryManagementSystem\\LibraryManagementSystem.Core\\LibraryManagementSystem.Core.csproj",
+      "projectUniqueName": "C:\\Work\\GamaLearn\\LibraryManagementSystem\\LibraryManagementSystem.Core\\LibraryManagementSystem.Core.csproj",
       "projectName": "LibraryManagementSystem.Core",
-      "projectPath": "C:\\Work\\LibraryManagementSystem\\LibraryManagementSystem.Core\\LibraryManagementSystem.Core.csproj",
+      "projectPath": "C:\\Work\\GamaLearn\\LibraryManagementSystem\\LibraryManagementSystem.Core\\LibraryManagementSystem.Core.csproj",
       "packagesPath": "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\LibraryManagementSystem\\LibraryManagementSystem.Core\\obj\\",
+      "outputPath": "C:\\Work\\GamaLearn\\LibraryManagementSystem\\LibraryManagementSystem.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rami.alkhateeb\\AppData\\Roaming\\NuGet\\NuGet.Config",

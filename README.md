@@ -56,7 +56,7 @@ steps:
 ```
 
 
-And I made a pipeline in github actions, it was failing in the build stage
+And I made a pipeline in github actions
 https://github.com/RamiAlkhateeb/LibraryManagementSystem/actions
 
 ``` yaml
@@ -67,6 +67,10 @@ on:
   push:
     branches:
     - master
+    
+env:
+  AZURE_WEBAPP_NAME: LibraryMSBackend
+  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
 
 jobs:
   Publish:
@@ -76,7 +80,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Setup .Net
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v2
         with:
           dotnet-version: '6.0.x'
           
@@ -84,10 +88,17 @@ jobs:
         run: dotnet restore ./LibraryManagementSystem.sln
         
       - name: Build
-        run: dotnet build ./LibraryManagementSystem.sln -configuration Release --no-restore
+        run: dotnet build ./LibraryManagementSystem.sln --configuration Release
         
       - name: Publish
-        run: dotnet publish ./LibraryManagementSystem.API/LibraryManagementSystem.API.csproj --configuration Release --no-build
+        run: dotnet publish ./LibraryManagementSystem.sln --configuration Release --output './publish'
+      
+      - name: deployment
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
 ```
 

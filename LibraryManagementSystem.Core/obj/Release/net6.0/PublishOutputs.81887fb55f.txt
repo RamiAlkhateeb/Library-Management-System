@@ -1,0 +1,14 @@
+C:\Work\GamaLearn\LibraryManagementSystem\publish\LibraryManagementSystem.Core.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\LibraryManagementSystem.Core.deps.json
+C:\Work\GamaLearn\LibraryManagementSystem\publish\LibraryManagementSystem.Core.pdb
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.EntityFrameworkCore.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.Caching.Memory.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.Logging.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.Options.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\Microsoft.Extensions.Primitives.dll
+C:\Work\GamaLearn\LibraryManagementSystem\publish\System.Diagnostics.DiagnosticSource.dll

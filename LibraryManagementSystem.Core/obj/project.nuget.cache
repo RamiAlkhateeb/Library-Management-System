@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9iL+c2aspY61BIfuRfsuXfDz9En+2bLLuiQ1Kz8FEkNa7ObrKSaVe+ytXP8pg0z6mgacAq2XHJ+snj5StKUppQ==",
+  "dgSpecHash": "SMYO79XCdt1ePIh1+hLqIcxLZT5Lbfsk7/HNFNE259JtN3Paa5VwyAIJ5+NALvj2O2hRWuc+Bb2L6FV36fRqEA==",
   "success": true,
-  "projectFilePath": "C:\\Work\\LibraryManagementSystem\\LibraryManagementSystem.Core\\LibraryManagementSystem.Core.csproj",
+  "projectFilePath": "C:\\Work\\GamaLearn\\LibraryManagementSystem\\LibraryManagementSystem.Core\\LibraryManagementSystem.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.20\\microsoft.entityframeworkcore.6.0.20.nupkg.sha512",
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.20\\microsoft.entityframeworkcore.abstractions.6.0.20.nupkg.sha512",

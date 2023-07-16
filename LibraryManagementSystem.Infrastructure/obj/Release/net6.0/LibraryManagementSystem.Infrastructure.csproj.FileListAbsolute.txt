@@ -1,0 +1,17 @@
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\bin\Release\net6.0\LibraryManagementSystem.Infrastructure.deps.json
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\bin\Release\net6.0\LibraryManagementSystem.Infrastructure.runtimeconfig.json
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\bin\Release\net6.0\LibraryManagementSystem.Infrastructure.dll
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\bin\Release\net6.0\LibraryManagementSystem.Infrastructure.pdb
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\bin\Release\net6.0\LibraryManagementSystem.Core.dll
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\bin\Release\net6.0\LibraryManagementSystem.Core.pdb
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.AssemblyInfo.cs
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.csproj.CopyComplete
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.dll
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\refint\LibraryManagementSystem.Infrastructure.dll
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.pdb
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\LibraryManagementSystem.Infrastructure.genruntimeconfig.cache
+C:\Work\GamaLearn\LibraryManagementSystem\LibraryManagementSystem.Infrastructure\obj\Release\net6.0\ref\LibraryManagementSystem.Infrastructure.dll
