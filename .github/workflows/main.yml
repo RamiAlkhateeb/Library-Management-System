@@ -1,0 +1,28 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+
+jobs:
+  Publish:
+    runs-on: windows-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup .Net
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+          
+      - name: Restore
+        run: dotnet restore ./LibraryManagementSystem.sln
+        
+      - name: Build
+        run: dotnet build ./LibraryManagementSystem.sln -configuration Release --no-restore
+        
+      - name: Publish
+        run: dotnet publish ./LibraryManagementSystem.sln --configuration Release --no-build
