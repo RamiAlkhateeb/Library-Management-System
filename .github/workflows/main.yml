@@ -22,7 +22,7 @@ jobs:
         run: dotnet restore ./LibraryManagementSystem.sln
         
       - name: Build
-        run: dotnet build ./LibraryManagementSystem.sln -configuration Release --no-restore
+        run: dotnet build ./LibraryManagementSystem.sln 
         
       - name: Publish
         run: dotnet publish ./LibraryManagementSystem.API/LibraryManagementSystem.API.csproj --configuration Release --no-build
