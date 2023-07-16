@@ -19,7 +19,7 @@ namespace LibraryManagementSystem.Infrastructure.Data
 
         public void Add(Book entity)
         {
-            entity.CreatedDate = DateTime.Now;
+            entity.CreatedDate = DateTime.UtcNow;
             _dbContext.Books.Add( entity );
             _dbContext.SaveChanges();
             
