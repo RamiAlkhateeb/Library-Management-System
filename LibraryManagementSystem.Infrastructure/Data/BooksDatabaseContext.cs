@@ -14,6 +14,13 @@ namespace LibraryManagementSystem.Infrastructure.Data
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Book>()
+                .Property(e => e.Id)
+                .UseIdentityColumn();
+        }
+
         public DbSet<Book> Products { get; set; }
     }
 }

@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace LibraryManagementSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(BooksDatabaseContext))]
-    [Migration("20240227095913_Unified_Table")]
-    partial class Unified_Table
+    [Migration("20240229062257_initial-migration")]
+    partial class initialmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

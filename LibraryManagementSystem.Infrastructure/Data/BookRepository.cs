@@ -1,34 +1,44 @@
 ﻿using LibraryManagementSystem.Core.Entities;
 using LibraryManagementSystem.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace LibraryManagementSystem.Infrastructure.Data
 {
     public class BookRepository : IBookRepository
     {
         private BooksDatabaseContext _dbContext = null;
-        public BookRepository(BooksDatabaseContext databaseContext )
+        public BookRepository(BooksDatabaseContext databaseContext)
         {
             _dbContext = databaseContext;
         }
 
         public void Add(Book entity)
         {
-            //entity.CreatedDate = DateTime.UtcNow;
-            _dbContext.Products.Add( entity );
-            _dbContext.SaveChanges();
-            
+            if (entity.GetType().GetProperties()
+                .Where(pi => pi.PropertyType == typeof(string))
+                .Select(pi => (string)pi.GetValue(entity))
+                .All(value => !string.IsNullOrEmpty(value))
+               )
+            {
+
+                _dbContext.Products.Add(entity);
+                _dbContext.SaveChanges();
+            }
+
         }
 
         public void Delete(int id)
         {
             var book = _dbContext.Products.Find(id);
-            if (book != null) {
+            if (book != null)
+            {
                 book.IsActive = false;
                 Update(id, book);
             }
@@ -36,7 +46,7 @@ namespace LibraryManagementSystem.Infrastructure.Data
 
         public async Task<Book> GetByIdAsync(int id)
             => await _dbContext.Products.Where(b => b.IsActive == true)
-            .FirstOrDefaultAsync(b => b.Id ==id);
+            .FirstOrDefaultAsync(b => b.Id == id);
 
         public async Task<List<Book>> ListAllAsync(string? searchFilter)
         {
@@ -48,14 +58,17 @@ namespace LibraryManagementSystem.Infrastructure.Data
         public void Update(int id, Book entity)
         {
             var book = _dbContext.Products.Find(id);
-            book.Title = entity.Title;
-            book.Description = entity.Description;
-            book.Brand = entity.Brand;
-            book.Category = entity.Category;
-            book.Price = entity.Price;
-            book.IsActive = entity.IsActive;
-            _dbContext.Products.Update(book);
-            _dbContext.SaveChanges();
+            if (book != null)
+            {
+                book.Title = entity.Title;
+                book.Description = entity.Description;
+                book.Brand = entity.Brand;
+                book.Category = entity.Category;
+                book.Price = entity.Price;
+                book.IsActive = entity.IsActive;
+                _dbContext.Products.Update(book);
+                _dbContext.SaveChanges();
+            }
         }
     }
 }
